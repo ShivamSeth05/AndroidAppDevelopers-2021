@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Verification.AadharView</string>
+    <string name="verify_aadhaar">Verify Aadhaar</string>
+    <string name="enter_otp_to_the_mobile_number_n_linked_with_your_aadhaar_91_xxx_xxx_x_780">Enter OTP to the Mobile number \n linked with your Aadhaar +91 xxx xxx x 780</string>
+    <string name="resend_otp_in_30_secs">Resend OTP in 30 secs</string>
+    <string name="don_t_have_91_xxx_xxx_x780">Don\'t have +91 xxx xxx x780?</string>
+    <string name="use_this_option_to_verfiy_aadhaar_manually">Use this option to verfiy Aadhaar manually.</string>
+</resources>
