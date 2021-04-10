@@ -5,4 +5,5 @@
     <string name="resend_otp_in_30_secs">Resend OTP in 30 secs</string>
     <string name="don_t_have_91_xxx_xxx_x780">Don\'t have +91 xxx xxx x780?</string>
     <string name="use_this_option_to_verfiy_aadhaar_manually">Use this option to verfiy Aadhaar manually.</string>
+    <string name="app_name">InternshipProgram</string>
 </resources>

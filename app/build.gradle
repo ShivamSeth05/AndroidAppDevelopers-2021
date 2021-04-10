@@ -9,6 +9,11 @@ android {
     defaultConfig {
         applicationId "com.e.verificationaadharview"
         minSdkVersion 17
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.android.internshipprogram"
+        minSdkVersion 19
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
