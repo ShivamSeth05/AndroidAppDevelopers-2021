@@ -19,4 +19,5 @@
 
     <color name="transparent_white">#83FFFFFF</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="lightblue">#EFF2F4</color>
 </resources>

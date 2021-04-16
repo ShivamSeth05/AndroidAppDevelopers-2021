@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".egroup.AadhaarVerification"
+    android:background="@color/lightblue">
+
+    <RelativeLayout
+        android:id="@+id/Rel1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/backbutton"
+            app:backgroundTint="@null" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@id/backbutton"
+            android:text="Verify Aadhaar"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/Rel2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/Rel1">
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="Enter OTP send to the mobile number linked with your Aadhaar +91 xxx xxx x780 "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text2"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/otp_edit_text1"
+                android:layout_width="@dimen/et_otp_width"
+                android:layout_height="@dimen/et_otp_height"
+                android:layout_marginEnd="@dimen/margin_right_otp"
+                android:background="@color/white"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/otp_edit_text2"
+                android:layout_width="@dimen/et_otp_width"
+                android:layout_height="@dimen/et_otp_height"
+                android:layout_marginEnd="@dimen/margin_right_otp"
+                android:background="@color/white"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/otp_edit_text3"
+                android:layout_width="@dimen/et_otp_width"
+                android:layout_height="@dimen/et_otp_height"
+                android:layout_marginEnd="@dimen/margin_right_otp"
+                android:background="@color/white"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/otp_edit_text4"
+                android:layout_width="@dimen/et_otp_width"
+                android:layout_height="@dimen/et_otp_height"
+                android:layout_marginEnd="@dimen/margin_right_otp"
+                android:background="@color/white"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/otp_edit_text5"
+                android:layout_width="@dimen/et_otp_width"
+                android:layout_height="@dimen/et_otp_height"
+                android:layout_marginEnd="@dimen/margin_right_otp"
+                android:background="@color/white"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/otp_edit_text6"
+                android:layout_width="@dimen/et_otp_width"
+                android:layout_height="@dimen/et_otp_height"
+                android:background="@color/white"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Resend OTP in 30 sec"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/BottomRel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Rel2">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Don't Have +91 xxx xxx x780? "
+            android:textColor="@color/purple_500"
+            android:textSize="20dp"
+            android:textStyle="" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview"
+            android:layout_centerHorizontal="true"
+            android:background="@color/lightblue"
+            android:text="Use this option to verify Aadhhar manually."
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            app:backgroundTint="@null" />
+    </RelativeLayout>
+
+</RelativeLayout>
