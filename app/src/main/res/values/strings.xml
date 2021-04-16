@@ -6,4 +6,11 @@
     <string name="don_t_have_91_xxx_xxx_x780">Don\'t have +91 xxx xxx x780?</string>
     <string name="use_this_option_to_verfiy_aadhaar_manually">Use this option to verfiy Aadhaar manually.</string>
     <string name="app_name">InternshipProgram</string>
+    <string name="name_as_on_aadhar">Name as on Aadhaar</string>
+    <string name="date_of_birth_as_on_aadhar">Date of Birth as on Aadhaar</string>
+    <string name="select_state">Select State</string>
+    <string name="enter_d.l_no">Enter D.L No.</string>
+    <string name="expires_on">Expires on</string>
+    <string name="fetch_my_driving_address">Fetch My Driving Licence</string>
+    <string name="checkbox_statement">I provide my consent to Digilocker to Fetch my driving licence based on provided details,</string>
 </resources>
