@@ -1,162 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+
     tools:context=".MainActivity">
-    <LinearLayout
+
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.OneApp.AppBarOverlay">
 
         <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="?actionBarSize"
+            android:padding="@dimen/appbar_padding"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/verify_aadhaar"
-            android:textColor="@color/textcolor1"
-            android:textSize="30sp"
-            android:layout_marginTop="15dp"
-            android:layout_marginStart="75dp"/>
-    </LinearLayout>
+            android:background="?attr/colorPrimary" />
+    </com.google.android.material.appbar.AppBarLayout>
 
-    <LinearLayout
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-        <include
-            layout="@layout/toolbar_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:gravity="center"
-            android:text="@string/enter_otp_to_the_mobile_number_n_linked_with_your_aadhaar_91_xxx_xxx_x_780"
-            android:textColor="@color/textcolor2"
-            android:textSize="18sp"
-            android:layout_gravity="center"/>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:paddingRight="25dp"
-            android:paddingLeft="25dp"
-            android:orientation="horizontal">
-
-            <EditText
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:background="@color/white"
-                android:layout_height="60dp"
-                android:focusable="true"
-                android:inputType="number"
-                android:textSize="30sp"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:maxLength="1"/>
-
-            <EditText
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:background="@color/white"
-                android:layout_height="60dp"
-                android:focusable="true"
-                android:layout_marginStart="8dp"
-                android:inputType="number"
-                android:textSize="30sp"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:maxLength="1"/>
-
-            <EditText
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:background="@color/white"
-                android:layout_height="60dp"
-                android:focusable="true"
-                android:layout_marginStart="8dp"
-                android:inputType="number"
-                android:textSize="30sp"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:maxLength="1"/>
-
-            <EditText
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:background="@color/white"
-                android:layout_height="60dp"
-                android:focusable="true"
-                android:inputType="number"
-                android:maxLength="1"
-                android:textSize="30sp"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:layout_marginStart="8dp"/>
-
-            <EditText
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:background="@color/white"
-                android:layout_height="60dp"
-                android:focusable="true"
-                android:inputType="number"
-                android:maxLength="1"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:layout_marginStart="8dp"/>
-
-            <EditText
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:background="@color/white"
-                android:layout_height="60dp"
-                android:focusable="true"
-                android:inputType="number"
-                android:maxLength="1"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:layout_marginStart="8dp"/>
-
-
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/resend_otp_in_30_secs"
-            android:textColor="@color/textcolor2"
-            android:textSize="20sp"
-            android:layout_marginTop="30dp"
-            android:gravity="center" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/don_t_have_91_xxx_xxx_x780"
-            android:textColor="@color/textcolor3"
-            android:textSize="25sp"
-            android:layout_marginTop="65dp"
-            android:gravity="center"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/use_this_option_to_verfiy_aadhaar_manually"
-            android:textColor="@color/textcolor4"
-            android:textSize="15sp"
-            android:layout_marginTop="10dp"
-            android:gravity="center"/>
-
-    </LinearLayout>
-
-</RelativeLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

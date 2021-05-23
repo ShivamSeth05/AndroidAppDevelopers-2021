@@ -1,3 +1,3 @@
 include ':app'
-rootProject.name = "Verification.AadharView"
-rootProject.name = "InternshipProgram"
+
+rootProject.name = "OneApp"
